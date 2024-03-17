@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Generateur d'étagère</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+        Zone Disponible
+        <br>
+      <label for="widthInput">Largeur:</label>
+      <input type="number" id="widthInput" value="10" />
+
+      <label for="heightInput">Hauteur:</label>
+      <input type="number" id="heightInput" value="6" />
+
+      <label for="depthInput">Profondeur:</label>
+      <input type="number" id="depthInput" value="1" />
+        <br>
+        Etagère Disponible
+        <br>
+      <label for="widthInput">Largeur:</label>
+      <input type="number" id="shelf_widthInput" value="1" />
+
+      <label for="heightInput">Hauteur:</label>
+      <input type="number" id="shelf_heightInput" value="0.2" />
+
+      <label for="depthInput">Profondeur:</label>
+      <input type="number" id="shelf_depthInput" value="1" />
+
+      <button onclick="updateShelf()">Mettre à jour l'étagère</button>
+    </div>
+
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
